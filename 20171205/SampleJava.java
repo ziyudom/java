@@ -5,6 +5,9 @@ public class SampleJava{
     System.out.printf("\n");//改行
     System.out.printf("\n");//改行
     sample2();
+    System.out.printf("\n");//改行
+    System.out.printf("\n");//改行
+    sample3();
   }
   private static void sample(){
     String output = String.format( "これは%5d",10);
@@ -26,6 +29,13 @@ public class SampleJava{
     System.out.printf("\n");//改行
     System.out.printf(String.format( "これは%20s","orehajiyuuda"));
   }
+  private static void sample3(){
+    System.out.printf(String.format( "これは%10b",true));
+    System.out.printf("\n");//改行
+    System.out.printf(String.format( "これは%10b","orehajiyuuda"));
+    System.out.printf("\n");//改行
+    System.out.printf(String.format( "これは%10b",0));
+  }
 }
 
 //出力されるもの
@@ -39,4 +49,8 @@ public class SampleJava{
 これは                いきたい
 これは              ziyuda
 これは        orehajiyuuda
+
+これは      true
+これは      true
+これは      true
 */
