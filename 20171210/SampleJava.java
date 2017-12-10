@@ -19,5 +19,17 @@ public class SampleJava{
         出力 同じ"test"なので入らない
         [test2, test3, test, test1]4種類
         */
+
+        /* 自然順序付け */
+
+        Set<String> names = new TreeSet<String>();
+        names.add("boboob");
+        names.add("hoge");
+        names.add("age");
+        names.add("hugaga");
+        System.out.println(names);
+        /* 出力
+        [age, boboob, hoge, hugaga]
+        */
     }
 }
