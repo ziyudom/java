@@ -32,6 +32,6 @@ public class SampleJava{
         System.out.println(names);
         /* 出力
         [age, boboob, hoge, あ, い, か, さ]
-        */
+    */
     }
 }
