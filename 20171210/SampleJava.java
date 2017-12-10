@@ -12,7 +12,7 @@ public class SampleJava{
         出力
         [test2, test3, test, test1]
         */
-        texts.add("test");
+        texts.add("test");//同じtestを入れてみる
         System.out.print(texts);
         System.out.println(texts.size() +"種類");
         /*
@@ -21,15 +21,17 @@ public class SampleJava{
         */
 
         /* 自然順序付け */
-
         Set<String> names = new TreeSet<String>();
         names.add("boboob");
         names.add("hoge");
         names.add("age");
-        names.add("hugaga");
+        names.add("あ");
+        names.add("か");
+        names.add("い");
+        names.add("さ");
         System.out.println(names);
         /* 出力
-        [age, boboob, hoge, hugaga]
+        [age, boboob, hoge, あ, い, か, さ]
         */
     }
 }
