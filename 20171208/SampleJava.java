@@ -9,6 +9,16 @@ public class SampleJava{
     hogehugaArr.add("ぐガー");
     hogehugaArr.add("フガー");
 
+    //サイズを見る size
+    System.out.println( hogehugaArr.size() );
+    //出力 4
+
+    //"フガー"があるかどうか
+    System.out.println( hogehugaArr );//出力 [フガー, うガー, ぐガー, フガー]
+    System.out.println( hogehugaArr.contains("フガー") );//出力 true
+    System.out.println( hogehugaArr.contains("ほガー") );//出力 false
+
+
     Iterator<String> iterator = hogehugaArr.iterator();
     while( iterator.hasNext() ){
       String text = iterator.next();
