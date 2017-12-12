@@ -8,6 +8,7 @@ public class User implements Comparable<User>{
     public User(){};
 
     public int compareTo( User obj){
+        
         //番号が低ければ
         if( this.number < obj.number ){
             return -1;
