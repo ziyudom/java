@@ -1,7 +1,8 @@
 import java.io.*;
 
-public class SampleJava{
+public class SampleJava {
     public static void main(String[] args) throws IOException{
+        
         FileWriter fw = new FileWriter("hoge.txt",true);
         fw.write("hoge");
         fw.flush();
@@ -12,10 +13,8 @@ public class SampleJava{
         while( i != -1 ){
             char c = (char) i;
             System.out.println(c);
-
             i = fr.read();
         }
-
         fr.close();
         /*出力
         わ
