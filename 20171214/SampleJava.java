@@ -1,5 +1,6 @@
 import java.io.*;
 
+//closeは必ずfinallyで使う
 public class SampleJava {
     public static void main(String[] args) throws IOException{
 
