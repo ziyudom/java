@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.time.*;
 
 public class Sample {
     public static void main(String[] args){
@@ -12,5 +13,14 @@ public class Sample {
         Date test = new Date(1513517587002L);
         System.out.println(test);
         //Sun Dec 17 22:33:07 JST 2017
+
+        Instant instant = Instant.now();
+        System.out.println(instant);
+        //2017-12-17T13:38:50.899875Z
+
+        ZonedDateTime zone = ZonedDateTime.now();
+        System.out.println(zone);
+        //2017-12-17T22:42:50.422920+09:00[Asia/Tokyo]
+
     }
 }
